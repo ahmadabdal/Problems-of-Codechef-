@@ -1,0 +1,44 @@
+You and your friend are playing a game with hoops. There are 
+N hoops (where 
+N is odd) in a row. You jump into hoop 1, and your friend jumps into hoop 
+N. Then you jump into hoop 
+2, and after that, your friend jumps into hoop N−1, and so on.
+
+The process ends when someone cannot make the next jump because the hoop is occupied by the other person. Find the last hoop that will be jumped into.
+
+Input
+The first line contains an integer 
+T, the number of test cases. Then the test cases follow.
+Each test case contains a single line of input, a single integer
+N.
+
+Solution:
+
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner s=new Scanner(System.in);
+		int t=s.nextInt();
+		for(int i=0;i<t;i++){
+		    int n=s.nextInt();
+		    if(n==1){
+		        System.out.println(1);
+		    }
+		    else if(n%2==0){
+		        System.out.println((n/2)+1);
+		        
+		    }
+		    else 
+		    System.out.println((n+1)/2);
+		}
+	}
+}
